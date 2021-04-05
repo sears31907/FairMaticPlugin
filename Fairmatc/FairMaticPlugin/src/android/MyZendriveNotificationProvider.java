@@ -1,4 +1,12 @@
-package com.cts.Fairmatic;
+package org.apache.cordova.plugin;
+
+import org.apache.cordova.CordovaPlugin;
+import org.apache.cordova.CallbackContext;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;

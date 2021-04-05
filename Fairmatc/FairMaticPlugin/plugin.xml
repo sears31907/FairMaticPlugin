@@ -1,2 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="com.cts.fairmaticplugin" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"><name>FairMaticPlugin</name><js-module name="FairMaticPlugin" src="www/FairMaticPlugin.js"><clobbers target="com.cts.Fairmatic" /></js-module><platform name="android"><config-file parent="/*" target="res/xml/config.xml"><feature name="FairMaticPlugin"><param name="android-package" value="com.cts.fairmaticplugin.FairMaticPlugin" /></feature></config-file><config-file parent="/*" target="AndroidManifest.xml"></config-file><source-file src="src/android/FairMaticPlugin.java" target-dir="src/com/cts/fairmaticplugin/FairMaticPlugin" /></platform></plugin>
+<plugin id="com.cts.fairmaticplugin" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>FairMaticPlugin</name>
+    <js-module name="FairMaticPlugin" src="www/FairMaticPlugin.js">
+        <clobbers target="com.cts.fairmaticplugin" />
+    </js-module>
+    <license>Apache 2.0</license>
+    <keywords>cordova,fairmaticplugin</keywords>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="FairMaticPlugin">
+                <param name="android-package" value="com.cts.fairmaticplugin.FairMaticPlugin" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+        </config-file>
+        <source-file src="src/android/FairMaticPlugin.java" target-dir="src/com/cts/fairmaticplugin/FairMaticPlugin" />
+        <source-file src="src/android/MyZendriveBroadcastReceiver.java" target-dir="src/com/cts/fairmaticplugin/FairMaticPlugin" />
+        <source-file src="src/android/MyZendriveNotificationProvider.java" target-dir="src/com/cts/fairmaticplugin/FairMaticPlugin" />
+    </platform>
+</plugin>

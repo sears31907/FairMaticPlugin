@@ -1,32 +1,32 @@
-package com.cts.Fairmatic;
+package org.apache.cordova.plugin;
+
+import org.apache.cordova.CordovaPlugin;
+import org.apache.cordova.CallbackContext;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import android.content.pm.PackageManager;
 import android.Manifest;
 import android.os.Build;
-
+import com.zendrive.sdk.*;
 import android.widget.Toast;
-import org.apache.cordova.CordovaPlugin;
-import org.apache.cordova.CallbackContext;
-import org.json.JSONArray;
-import org.json.JSONException;
+
+
+
 public class FairMaticPlugin extends CordovaPlugin {
 
-    private static final String TAG = "Cordova-Plugin-HTTP";
-
-    private TLSConfiguration tlsConfiguration;
-
-    private HashMap<Integer, Future<?>> reqMap;
-    private final Object reqMapLock = new Object();
-
+    
     @Override
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
         super.initialize(cordova, webView);
-        this.reqMap = new HashMap<Integer, Future<?>>();
+       
 
         try {
 
         } catch (Exception e) {
-            Log.e(TAG, "An error occured while Initializing", e);
+          
         }
     }
 
